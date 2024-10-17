@@ -1,0 +1,22 @@
+.bottom-banner{
+  height: 350px;
+  background-color: #FFA500;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  
+}
+
+.footer-logo{
+  width: 200px;
+  border-radius: 100px;
+  
+}
+
+.footer-image-div{
+  padding-left: 50px;
+}

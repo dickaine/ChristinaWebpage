@@ -1,0 +1,24 @@
+
+
+body{
+  margin: 0;
+  padding-top: 115px;
+  height: 100%;
+  width: 100vw;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #696969;
+}
+
+h1{
+  font-size: 3vw;
+  color: #ffa500;
+}
+
+@media screen and (max-width: 480px){
+  body{
+  width: 100vw;
+  z-index: 100;
+
+  }
+}
