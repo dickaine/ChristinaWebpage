@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christina van Hoekelen — HR × HRtech consultant</title>
+    <meta name="description" content="Ik bouw de brug tussen HR en IT. Implementaties, vendor-selecties en optimalisaties voor Nederlandse scale-ups en corporates.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/hero.css">
+    <link rel="stylesheet" href="CSS/overmij.css">
+    <link rel="stylesheet" href="CSS/diensten.css">
+    <link rel="stylesheet" href="CSS/case-studies.css">
+    <link rel="stylesheet" href="CSS/testimonials.css">
+    <link rel="stylesheet" href="CSS/hr-tech-review.css">
+    <link rel="stylesheet" href="CSS/newsletter.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/bottom-banner.css">
+    <link rel="stylesheet" href="CSS/theme-toggle.css">
+
+    <link rel="icon" href="Images/WhatsApp Image 2024-04-15 at 12.33.25.jpeg" type="image/jpeg">
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a class="wordmark" href="index.html">Christina van Hoekelen</a>
+
+        <nav class="primary-nav" aria-label="Hoofdmenu">
+          <a href="#over-mij">Over mij</a>
+          <a href="#diensten">Diensten</a>
+          <a href="#cases">Cases</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" aria-label="Wissel thema" aria-pressed="false">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+          </button>
+          <!-- TBD: vervang href door Cal.com / Calendly URL -->
+          <a class="btn btn-primary header-cta" href="#contact">Plan kennismaking</a>
+        </div>
+      </div>
+    </header>
+
+    <script src="Javascript/scrolling.js"></script>
+    <!-- end of header -->
+
+    <main>
+
+      <!-- hero -->
+      <section id="hero" class="hero">
+        <div class="container-wide hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">HR × HRtech consultant</p>
+            <h1>Ik bouw de brug tussen HR en IT — zodat je HR-systeem werkt voor de mensen die het gebruiken.</h1>
+            <p class="lead">15 jaar HR + HRtech-ervaring. Implementaties, vendor-selecties en optimalisaties voor Nederlandse scale-ups en corporates.</p>
+            <div class="hero-ctas">
+              <!-- TBD: Cal.com / Calendly URL -->
+              <a class="btn btn-primary" href="#contact">Plan een kennismaking</a>
+              <a class="btn btn-secondary" href="#diensten">Bekijk hoe ik werk</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <!-- TBD: vervang door environmental shot (whiteboard / laptop / workshop) i.p.v. studio portret -->
+            <img src="Images/Christina_van_Hoekelen_HRTech_Review.png" alt="Christina van Hoekelen" class="hero-portrait">
+          </div>
+        </div>
+
+        <!-- Gewerkt voor -->
+        <div class="container-wide logo-strip">
+          <p class="logo-strip-label">Gewerkt voor</p>
+          <ul class="logo-strip-list">
+            <li><img src="Images/KPN_logo.png" alt="KPN"></li>
+            <li><img src="Images/VU_logo.jpg" alt="Vrije Universiteit Amsterdam"></li>
+            <!-- TBD: logos voor JDE, AFPRO, Rituals nog toevoegen -->
+            <li class="logo-strip-placeholder">JDE</li>
+            <li class="logo-strip-placeholder">AFPRO</li>
+            <li class="logo-strip-placeholder">Rituals</li>
+          </ul>
+        </div>
+      </section>
+      <!-- end of hero -->
+
+      <!-- Over mij -->
+      <section id="over-mij" class="over-mij section section-alt">
+        <div class="container over-mij-grid">
+          <div class="over-mij-text">
+            <p class="eyebrow">Over mij</p>
+            <h2>De komende 10 jaar gaat het systeem de mens weer dienen.</h2>
+            <p class="lead">De afgelopen 10 jaar stonden in het teken van het standaardiseren van HR-systemen. De volgende fase vraagt iemand die beide talen spreekt — HR én IT.</p>
+            <p>Ik ben Christina, 34 jaar, en heb 15 jaar in het HR-vak gewerkt. De laatste vijf jaar als freelancer. Mijn specialisatie: organisaties helpen om HR-systemen niet alleen technisch goed te implementeren, maar ze ook echt te laten werken voor de mensen die ermee moeten werken.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end of Over mij -->
+
+      <!-- Diensten -->
+      <section id="diensten" class="diensten section">
+        <div class="container-wide">
+          <header class="section-header">
+            <p class="eyebrow">Diensten</p>
+            <h2>Drie manieren om samen te werken.</h2>
+            <p class="lead">Geen open-eind consultancy. Iedere opdracht heeft een afgebakende scope, doorlooptijd en oplevering.</p>
+          </header>
+
+          <div class="diensten-grid">
+
+            <article class="dienst-card">
+              <h3 class="dienst-name">HRIS Vendor Selection Sprint</h3>
+              <p class="dienst-outcome">Een onderbouwde keuze voor het HR-systeem dat bij jullie organisatie past — zonder vendor-druk.</p>
+              <ul class="dienst-scope">
+                <li>Requirements-sessies met HR, IT en eindgebruikers</li>
+                <li>Long- en shortlist van leveranciers</li>
+                <li>Gestructureerde demo's en scoring</li>
+                <li>Onderbouwd selectie-advies</li>
+              </ul>
+              <dl class="dienst-meta">
+                <div>
+                  <dt>Duur</dt>
+                  <dd>4 weken</dd>
+                </div>
+                <div>
+                  <dt>Wanneer dit past</dt>
+                  <dd>Je staat voor de eerste (of opnieuw) keuze van een HR-systeem.</dd>
+                </div>
+                <div>
+                  <dt>Indicatieve investering</dt>
+                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd">op aanvraag</span></dd>
+                </div>
+              </dl>
+              <a class="btn-ghost" href="#contact">Plan kennismaking</a>
+            </article>
+
+            <article class="dienst-card">
+              <h3 class="dienst-name">Implementatie &amp; Go-Live Begeleiding</h3>
+              <p class="dienst-outcome">Een nieuwe HR-suite of -module die op tijd live gaat — en die HR én IT samen blijven dragen.</p>
+              <ul class="dienst-scope">
+                <li>Product owner / proces manager rol</li>
+                <li>Brug tussen HR-business en technische consultants</li>
+                <li>Sturen op scope, planning en go-live readiness</li>
+                <li>Training en overdracht naar de staande organisatie</li>
+              </ul>
+              <dl class="dienst-meta">
+                <div>
+                  <dt>Duur</dt>
+                  <dd>Per project</dd>
+                </div>
+                <div>
+                  <dt>Wanneer dit past</dt>
+                  <dd>Je bent gestart met een implementatie en mist een eigenaar die beide werelden begrijpt.</dd>
+                </div>
+                <div>
+                  <dt>Indicatieve investering</dt>
+                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd">op aanvraag</span></dd>
+                </div>
+              </dl>
+              <a class="btn-ghost" href="#contact">Plan kennismaking</a>
+            </article>
+
+            <article class="dienst-card">
+              <h3 class="dienst-name">Post-Implementation Optimalisatie</h3>
+              <p class="dienst-outcome">Een bestaand HR-systeem dat draait, maar onderbenut is — terugbrengen naar wat het oorspronkelijk moest doen.</p>
+              <ul class="dienst-scope">
+                <li>Procesaudit met HR, IT en key-users</li>
+                <li>Identificatie van quick wins en structurele issues</li>
+                <li>Roadmap voor configuratie- en procesverbetering</li>
+                <li>Begeleiding bij uitvoering of overdracht</li>
+              </ul>
+              <dl class="dienst-meta">
+                <div>
+                  <dt>Duur</dt>
+                  <dd>6 weken</dd>
+                </div>
+                <div>
+                  <dt>Wanneer dit past</dt>
+                  <dd>Je hebt een systeem dat &quot;draait&quot; maar de adoptie of efficiëntie blijft achter.</dd>
+                </div>
+                <div>
+                  <dt>Indicatieve investering</dt>
+                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd">op aanvraag</span></dd>
+                </div>
+              </dl>
+              <a class="btn-ghost" href="#contact">Plan kennismaking</a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+      <!-- end of Diensten -->
+
+      <!-- Cases -->
+      <section id="cases" class="cases section section-alt">
+        <div class="container-wide">
+          <header class="section-header">
+            <p class="eyebrow">Cases</p>
+            <h2>Wat ik heb gebouwd.</h2>
+          </header>
+
+          <div class="cases-grid">
+
+            <article class="case-card">
+              <div class="case-logo">
+                <img src="Images/KPN_logo.png" alt="KPN">
+              </div>
+              <h3 class="case-title">Oracle Cloud HCM — Time &amp; Labor</h3>
+              <p class="case-context">KPN consolideerde meerdere legacy HR-platformen naar één Oracle Cloud HCM-suite. Als verantwoordelijke voor de Time &amp; Labor-module zorgde ik voor scope, go-live readiness en voorbereiding van de business.</p>
+              <dl class="case-outcome">
+                <dt>Resultaat</dt>
+                <!-- TBD: Christina to verify numbers (aantal platformen, aantal medewerkers, etc.) -->
+                <dd>Go-live januari 2022. Migratie vanuit meerdere legacy-platformen naar één standaard.</dd>
+              </dl>
+            </article>
+
+            <article class="case-card">
+              <div class="case-logo">
+                <img src="Images/VU_logo.jpg" alt="Vrije Universiteit Amsterdam">
+              </div>
+              <h3 class="case-title">ServiceNow — Onboarding &amp; Offboarding</h3>
+              <p class="case-context">Als HR Product Owner verantwoordelijk voor het ontwerp en de bouw van de onboarding- en offboarding-modules in ServiceNow, inclusief de procedures eromheen.</p>
+              <dl class="case-outcome">
+                <dt>Resultaat</dt>
+                <!-- TBD: Christina to verify numbers (aantal nieuwe medewerkers per jaar, reductie doorlooptijd, etc.) -->
+                <dd>Gestandaardiseerd in- en uitstroomproces voor de hele organisatie.</dd>
+              </dl>
+            </article>
+
+            <article class="case-card">
+              <!-- TBD: derde case — keuze uit JDE / AFPRO / Rituals + logo + context + outcome -->
+              <div class="case-logo case-logo-placeholder">
+                <span>Logo</span>
+              </div>
+              <h3 class="case-title">Interim HR Services &amp; Get-well plan</h3>
+              <p class="case-context">Verbetering van de onboarding-journey en interim get-well plan bij een corporate. Focus op procesinrichting, systeemconfiguratie en gebruikersadoptie.</p>
+              <dl class="case-outcome">
+                <dt>Resultaat</dt>
+                <!-- TBD: client naam, jaar, en outcome cijfer -->
+                <dd><span class="tbd">TBD — Christina aanvullen met klant, periode en concreet resultaat.</span></dd>
+              </dl>
+            </article>
+
+          </div>
+        </div>
+      </section>
+      <!-- end of Cases -->
+
+      <!-- testimonials carousel -->
+      <section id="testimonials" class="testimonials section">
+        <div class="container">
+          <header class="section-header section-header-center">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Wat opdrachtgevers zeggen.</h2>
+          </header>
+
+          <div class="carousel-container">
+            <div class="carousel-text">
+              <div class="active">
+                <blockquote>
+                  <p>"Christina was verantwoordelijk voor het opzetten van de Time &amp; Labor module in onze HR Transitie naar Oracle Cloud met een livegang van Jan 2022. Een uitdagende rol omdat KPN hiermee in staat werd gesteld om vanuit verschillende platformen en applicaties naar een standaard te migreren. Christina heeft veel waardering ontvangen voor de manier waarop zij ook de betreffende business onderdelen heeft voorbereid op deze transitie en deze heeft uitgevoerd. Zij is een gefocuste HR IT professional, met veel kennis en daarnaast aandacht voor de mens achter de IT implementatie. Tevens heeft zij interim verbeteringen en get-well plan uitgevoerd in de onboardings journey."</p>
+                </blockquote>
+                <footer class="testimonial-attribution">
+                  <span class="testimonial-name">Marcel Winkel</span>
+                  <span class="testimonial-sep">·</span>
+                  <span class="testimonial-role">KPN</span>
+                  <img src="Images/KPN_logo.png" alt="KPN" class="testimonial-logo">
+                </footer>
+              </div>
+              <div>
+                <blockquote>
+                  <!-- TBD: Christina to replace placeholder met de echte Yvette Minderhoud quote -->
+                  <p>"Christina heeft me meerdere keren snel uit complexe situaties geholpen. Ze weet projecten parallel te lopen zonder de regie te verliezen."</p>
+                </blockquote>
+                <footer class="testimonial-attribution">
+                  <span class="testimonial-name">Yvette Minderhoud</span>
+                  <span class="testimonial-sep">·</span>
+                  <span class="testimonial-role">Vrije Universiteit Amsterdam</span>
+                  <img src="Images/VU_logo.jpg" alt="Vrije Universiteit Amsterdam" class="testimonial-logo">
+                </footer>
+              </div>
+              <div>
+                <blockquote>
+                  <p>"Christina reported into me as an HR Product Owner for ServiceNow. She worked efficiently and diligently on building onboarding and offboarding modules, and quickly displayed strengths in creating procedures and working with systems and technology. Christina is extremely eager to learn and grow, and thrives on project-based work. She is very friendly, service-minded and tech-savvy who will always seek to do the best that she can in any situation."</p>
+                </blockquote>
+                <footer class="testimonial-attribution">
+                  <span class="testimonial-name">Kim Nijland</span>
+                  <span class="testimonial-sep">·</span>
+                  <span class="testimonial-role">Vrije Universiteit Amsterdam</span>
+                  <img src="Images/VU_logo.jpg" alt="Vrije Universiteit Amsterdam" class="testimonial-logo">
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="Javascript/carousel.js"></script>
+      <!-- end of testimonials carousel -->
+
+      <!-- HR Tech Review strip -->
+      <section id="hr-tech-review" class="hr-tech-review section">
+        <div class="container hr-tech-flexbox">
+          <div class="hr-tech-review-text">
+            <p class="eyebrow">Featured in</p>
+            <p class="hr-tech-pull">"De komende jaren verwacht ik dat de focus verschuift van het systeem naar de mens — dat het systeem de mens weer gaat dienen in plaats van andersom."</p>
+            <p class="hr-tech-meta">Expert panel · HRtechArena</p>
+          </div>
+          <div class="hrtech-emblems">
+            <a href="https://hrtecharena.nl/arena/christina-van-hoekelen/" target="_blank" rel="noopener">
+              <img src="Images/Hrtechlogo.webp" alt="HRtechArena" class="hrtech-emblem">
+            </a>
+            <a href="https://hrtecharena.nl/arena/christina-van-hoekelen/" target="_blank" rel="noopener" class="hrtech-link">
+              Lees het panel
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end of HR Tech Review strip -->
+
+      <!-- Newsletter -->
+      <section id="newsletter" class="newsletter">
+        <div class="container newsletter-inner">
+          <div class="newsletter-copy">
+            <h2 class="newsletter-title">Maandelijkse take op HR-tech in Nederland.</h2>
+            <p class="newsletter-sub">Wat werkt, wat niet, en waarom. Eén keer per maand. Geen spam.</p>
+          </div>
+          <!-- TBD: koppel form action aan ESP (Mailchimp / Buttondown / Beehiiv) -->
+          <form class="newsletter-form" action="" method="post" novalidate>
+            <label for="newsletter-email" class="visually-hidden">E-mailadres</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="jouw@email.nl" required>
+            <button type="submit" class="btn btn-primary">Aanmelden</button>
+          </form>
+        </div>
+      </section>
+      <!-- end of Newsletter -->
+
+      <!-- Contact -->
+      <section id="contact" class="contact section section-alt">
+        <div class="container">
+          <header class="section-header section-header-center">
+            <p class="eyebrow">Contact</p>
+            <h2>Even sparren?</h2>
+            <p class="lead">Soms moeten de koppen even bij elkaar om te zien of er een match is.</p>
+          </header>
+
+          <div class="contact-primary">
+            <!-- TBD: vervang door werkelijke Cal.com embed iframe of inline widget -->
+            <div class="cal-embed-placeholder">
+              <p class="cal-embed-title">Plan direct een kennismaking</p>
+              <p class="cal-embed-sub">30 minuten — telefoon of video.</p>
+              <a class="btn btn-primary" href="#" aria-disabled="true">
+                Cal.com embed (TBD)
+              </a>
+            </div>
+          </div>
+
+          <ul class="contact-methods">
+            <li>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/31613704118" target="_blank" rel="noopener">+31 6 13 70 41 18</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/cvanhoekelen" target="_blank" rel="noopener">linkedin.com/in/cvanhoekelen</a>
+            </li>
+            <li>
+              <span class="contact-label">E-mail</span>
+              <a href="mailto:office@christinaforhr.nl">office@christinaforhr.nl</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end of Contact -->
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bottom-banner">
+      <div class="container-wide footer-grid">
+        <div class="footer-brand">
+          <p class="footer-wordmark">Christina van Hoekelen</p>
+          <p class="footer-tagline">De brug tussen HR en IT.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#over-mij">Over mij</a>
+          <a href="#diensten">Diensten</a>
+          <a href="#cases">Cases</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-meta">
+          <ul class="footer-social">
+            <li><a href="https://www.linkedin.com/in/cvanhoekelen" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://wa.me/31613704118" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:office@christinaforhr.nl">E-mail</a></li>
+          </ul>
+          <!-- TBD: KvK nummer invullen -->
+          <p class="footer-kvk">KvK <span class="tbd">TBD</span> · © <span id="footer-year">2026</span> Christina van Hoekelen</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script>
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="Javascript/theme-toggle.js"></script>
+
+  </body>
+</html>
