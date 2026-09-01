@@ -1,87 +1,91 @@
-.testimonials{
-  /* height: 556px; */
-  /* background-color: #e0e0e0; */
-  /* text-align: center; */
-  /* padding-top: 65px; */
-}
-
-
-.testimonials{
-  height: 100vh;
-  background-color: #e0e0e0;
-  /* text-align: center;  */
-  /* padding-top: 65px; */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  
-  
-}
-
-.testimonials h1{
-  color: #ffA500 ;
-  font-size: 50px;
-  margin: 8vh 0;
+.testimonials {
+  background-color: var(--bg);
 }
 
 .carousel-container {
+  position: relative;
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: var(--space-8) var(--space-6);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  min-height: 360px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 80%;
-  max-width: 800px;
-  height: 100%;
-  max-height: 500px;
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10vh;
+  justify-content: center;
 }
 
-.carousel-text{
+.carousel-text {
   width: 100%;
-  max-width: 700px;
+  position: relative;
 }
 
-
-.carousel-text div {
+.carousel-text > div {
   opacity: 0;
   position: absolute;
-  /* transition: opacity 1s ease-in-out; */
-  font-size: 1em;
-  color: #696969;
-  margin: 30px;
-  line-height: 29px;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 600ms ease-in-out;
+  text-align: center;
 }
 
-.carousel-text div.active {
+.carousel-text > div.active {
   opacity: 1;
   position: relative;
-  transition: opacity 1s ease-in-out;
 }
 
-
-
-.testimonial-name{
-  color:#ffA500;
-  font-size: 1.5em;
-  width: 300px;
-  display: inline-block;
-}
-.testimonial-image{
-  width: 300px;
-  display: inline-block;
-  margin-top: 100px;
+.carousel-text blockquote {
+  margin: 0 0 var(--space-6) 0;
 }
 
-.carousel-text img{
-  width: 60px;
-  display:inline-block;
-  /* padding-top: 100px; */
+.carousel-text blockquote p {
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 1.6vw, 1.5rem);
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+  font-weight: 400;
 }
 
+.testimonial-attribution {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
+}
+
+.testimonial-name {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.testimonial-logo {
+  height: 24px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  filter: opacity(0.9);
+  margin-left: var(--space-2);
+}
+
+[data-theme="dark"] .testimonial-logo,
+:root:not([data-theme="light"]) .testimonial-logo {
+  filter: grayscale(1) opacity(0.6) invert(0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .testimonial-logo {
+    filter: grayscale(1) opacity(0.6) invert(0.85);
+  }
+}
+
+@media (max-width: 540px) {
+  .carousel-container {
+    padding: var(--space-6) var(--space-4);
+    min-height: 460px;
+  }
+}

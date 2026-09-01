@@ -1,0 +1,149 @@
+.diensten-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.dienst-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background-color: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.dienst-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--accent-orange);
+}
+
+.dienst-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.dienst-name {
+  font-size: var(--fs-h3);
+  margin: 0;
+}
+
+.dienst-outcome {
+  color: var(--ink);
+  margin: 0;
+}
+
+.dienst-scope {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.dienst-scope li {
+  position: relative;
+  padding-left: var(--space-5);
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.dienst-scope li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 1px;
+  background-color: var(--accent);
+}
+
+.dienst-meta {
+  margin: 0;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.dienst-meta > div {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: var(--space-3);
+  font-size: 0.9375rem;
+}
+
+.dienst-meta dt {
+  font-weight: 500;
+  color: var(--ink);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dienst-meta dd {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.dienst-track-logos {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.dienst-track-logos img {
+  height: 20px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  filter: opacity(0.9);
+}
+
+[data-theme="dark"] .dienst-track-logos img,
+:root:not([data-theme="light"]) .dienst-track-logos img {
+  filter: grayscale(1) opacity(0.6) invert(0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .dienst-track-logos img {
+    filter: grayscale(1) opacity(0.6) invert(0.85);
+  }
+}
+
+.dienst-card .btn-ghost {
+  margin-top: auto;
+  align-self: flex-start;
+  padding-top: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .diensten-grid {
+    grid-template-columns: 1fr;
+    max-width: 36rem;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .dienst-card {
+    padding: var(--space-5);
+  }
+
+  .dienst-meta > div {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}
