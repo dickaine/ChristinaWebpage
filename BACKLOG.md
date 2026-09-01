@@ -11,21 +11,16 @@ Open items for christinaforhr.nl. Everything here needs either input from Christ
 
 ## Photos to update
 
-All current photos are placeholders or reused shots; replace with a consistent, recent set:
-
-- [ ] **Hero photo** — brief asks for an environmental shot (whiteboard / laptop / workshop) instead of the reused studio portrait.
-- [ ] **Over mij photo** (`Images/Over mij image.jpeg`) — replace with a recent portrait matching the new editorial style.
-- [ ] **Diensten image** (`Images/Diensten image.jpg`) — generic stock conference room; replace with a real working shot or drop it.
-- [ ] **Contact photo** (`Images/Contact foto.jpg`) — refresh alongside the other photography.
-- [ ] **HRtechArena review image** (`Images/Christina_van_Hoekelen_HRTech_Review.png`) — check it still matches her current profile on hrtecharena.nl.
-- [ ] Shoot in one session for consistent light/tone; export web-sized (≤ 1600px, compressed) instead of camera originals.
+- [x] Hero, Over mij, contact photo and favicon replaced with the Robin Kamphuis shoot (web-sized exports in `Images/christina-*.jpg` + `favicon.jpg`); originals live in OneDrive.
+- [ ] **Environmental shot** (whiteboard / laptop / workshop) from the brief is still open; the current hero is a studio portrait, be it a good one.
+- [ ] **Unused old photos** (`Over mij image.jpeg`, `Diensten image.jpg`, `Contact foto.jpg`, the WhatsApp jpegs, `Christina_van_Hoekelen_HRTech_Review.png`) can be pruned from `Images/`.
 
 ## Decisions / build work
 
 - [ ] **Hosting** — the site is not deployed anywhere yet. GitHub Pages is the zero-cost option for this repo; then point the christinaforhr.nl domain at it.
 - [ ] **Newsletter ESP** — the form has an empty `action`; pick a provider (Mailchimp / Buttondown / Beehiiv) and wire it up.
 - [ ] **Mobile navigation** — below 760px the primary nav is hidden entirely (only the CTA remains). If nav on mobile is wanted, build a slide-out or stacked menu.
-- [ ] **Favicon** — currently a WhatsApp photo JPEG; replace with a proper icon (e.g. a "C" monogram in the accent orange).
+- [x] Favicon now uses a square crop of the new headshot; a designed "C" monogram icon remains an option.
 
 ## Nice to have
 
