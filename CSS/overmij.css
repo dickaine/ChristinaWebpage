@@ -4,8 +4,28 @@
 
 .over-mij-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-6);
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(var(--space-6), 5vw, var(--space-9));
+  align-items: center;
+}
+
+.over-mij-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  filter: saturate(0.92);
+}
+
+@media (max-width: 768px) {
+  .over-mij-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .over-mij-photo {
+    max-width: 24rem;
+  }
 }
 
 .over-mij-text {
