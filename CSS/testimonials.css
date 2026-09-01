@@ -63,20 +63,12 @@
   color: var(--ink);
 }
 
-.testimonial-sep {
-  color: var(--rule);
-}
-
-.testimonial-role {
-  color: var(--ink-muted);
-}
-
 .testimonial-logo {
   height: 24px;
   width: auto;
   max-width: 80px;
   object-fit: contain;
-  filter: grayscale(1) opacity(0.6);
+  filter: opacity(0.9);
   margin-left: var(--space-2);
 }
 

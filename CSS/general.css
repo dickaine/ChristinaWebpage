@@ -1,12 +1,14 @@
 :root {
-  --bg: #F7F4EE;
-  --bg-alt: #EEE9DF;
+  --bg: #F2E6C9;
+  --bg-alt: #E8D8AF;
   --surface: #FFFFFF;
   --ink: #1A1A1A;
   --ink-muted: #4A4A47;
-  --accent: #1E3A2F;
-  --accent-soft: rgba(30, 58, 47, 0.10);
-  --accent-contrast: #F7F4EE;
+  --accent: #FFA500;
+  --accent-soft: rgba(255, 165, 0, 0.14);
+  --accent-contrast: #26200F;
+  --accent-orange: #FFA500;
+  --accent-orange-soft: rgba(255, 165, 0, 0.14);
   --rule: #D8D2C4;
 
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
@@ -50,28 +52,32 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #14110D;
-    --bg-alt: #1C1813;
-    --surface: #201C16;
-    --ink: #F0EBE0;
-    --ink-muted: #B9B3A4;
+    --bg: #4A3D28;
+    --bg-alt: #56462E;
+    --surface: #625038;
+    --ink: #F5F0E5;
+    --ink-muted: #D8CBB0;
     --accent: #7FB39A;
     --accent-soft: rgba(127, 179, 154, 0.14);
-    --accent-contrast: #14110D;
-    --rule: #36302A;
+    --accent-contrast: #26200F;
+    --accent-orange: #FFA500;
+    --accent-orange-soft: rgba(255, 165, 0, 0.18);
+    --rule: #6E5B3F;
   }
 }
 
 [data-theme="dark"] {
-  --bg: #14110D;
-  --bg-alt: #1C1813;
-  --surface: #201C16;
-  --ink: #F0EBE0;
-  --ink-muted: #B9B3A4;
-  --accent: #7FB39A;
-  --accent-soft: rgba(127, 179, 154, 0.14);
-  --accent-contrast: #14110D;
-  --rule: #36302A;
+  --bg: #4A3D28;
+  --bg-alt: #56462E;
+  --surface: #625038;
+  --ink: #F5F0E5;
+  --ink-muted: #D8CBB0;
+  --accent: #FFA500;
+  --accent-soft: rgba(255, 165, 0, 0.16);
+  --accent-contrast: #26200F;
+  --accent-orange: #FFA500;
+  --accent-orange-soft: rgba(255, 165, 0, 0.18);
+  --rule: #6E5B3F;
 }
 
 *,
@@ -181,6 +187,15 @@ hr {
   font-weight: 500;
 }
 
+.eyebrow::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  margin-top: var(--space-2);
+  background-color: var(--accent-orange);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -232,6 +247,7 @@ hr {
 
 .btn-ghost::after {
   content: " →";
+  color: var(--accent-orange);
   transition: transform var(--transition);
 }
 

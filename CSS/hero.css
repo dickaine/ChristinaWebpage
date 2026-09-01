@@ -29,6 +29,15 @@
   position: relative;
 }
 
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: var(--space-4) calc(var(--space-4) * -1) calc(var(--space-4) * -1) var(--space-4);
+  border: 2px solid var(--accent-orange);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+}
+
 .hero-portrait {
   width: 100%;
   height: auto;
@@ -36,6 +45,7 @@
   object-fit: cover;
   border-radius: var(--radius-lg);
   filter: saturate(0.92);
+  position: relative;
 }
 
 .logo-strip {
@@ -57,14 +67,44 @@
   font-weight: 500;
 }
 
+.logo-strip-viewport {
+  min-width: 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
 .logo-strip-list {
+  --logo-gap: clamp(var(--space-5), 4vw, var(--space-9));
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: clamp(var(--space-5), 4vw, var(--space-9));
+  gap: var(--logo-gap);
+  width: max-content;
+  animation: logo-marquee 48s linear infinite;
+}
+
+.logo-strip-viewport:hover .logo-strip-list {
+  animation-play-state: paused;
+}
+
+@keyframes logo-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - var(--logo-gap) / 2)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-strip-list {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .logo-strip-list li[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 .logo-strip-list img {
@@ -72,12 +112,12 @@
   width: auto;
   max-width: 140px;
   object-fit: contain;
-  filter: grayscale(1) opacity(0.55);
+  filter: opacity(0.9);
   transition: filter var(--transition);
 }
 
 .logo-strip-list img:hover {
-  filter: grayscale(0) opacity(1);
+  filter: opacity(1);
 }
 
 [data-theme="dark"] .logo-strip-list img,
@@ -89,19 +129,6 @@
   :root:not([data-theme="light"]) .logo-strip-list img {
     filter: grayscale(1) opacity(0.5) invert(0.85);
   }
-}
-
-.logo-strip-placeholder {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  padding-inline: var(--space-3);
-  border: 1px dashed var(--rule);
-  border-radius: var(--radius-sm);
-  font-size: var(--fs-small);
-  color: var(--ink-muted);
-  font-style: italic;
 }
 
 @media (max-width: 860px) {

@@ -1,6 +1,6 @@
 .bottom-banner {
   background-color: var(--bg-alt);
-  border-top: 1px solid var(--rule);
+  border-top: 2px solid var(--accent-orange);
   padding-block: var(--space-9) var(--space-7);
 }
 

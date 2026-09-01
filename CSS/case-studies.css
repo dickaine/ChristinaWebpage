@@ -5,6 +5,7 @@
 }
 
 .case-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
@@ -12,7 +13,18 @@
   background-color: var(--surface);
   border: 1px solid var(--rule);
   border-radius: var(--radius-md);
+  overflow: hidden;
   transition: border-color var(--transition);
+}
+
+.case-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--accent-orange);
 }
 
 .case-card:hover {
@@ -30,7 +42,7 @@
   max-width: 140px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(1) opacity(0.7);
+  filter: opacity(0.9);
 }
 
 [data-theme="dark"] .case-logo img,
@@ -42,24 +54,6 @@
   :root:not([data-theme="light"]) .case-logo img {
     filter: grayscale(1) opacity(0.7) invert(0.85);
   }
-}
-
-.case-logo-placeholder {
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.case-logo-placeholder span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  padding-inline: var(--space-4);
-  border: 1px dashed var(--rule);
-  border-radius: var(--radius-sm);
-  font-size: var(--fs-small);
-  color: var(--ink-muted);
-  font-style: italic;
 }
 
 .case-title {

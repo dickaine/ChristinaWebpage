@@ -5,14 +5,26 @@
 }
 
 .dienst-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-3);
   padding: var(--space-6);
   background-color: var(--surface);
   border: 1px solid var(--rule);
   border-radius: var(--radius-md);
+  overflow: hidden;
   transition: border-color var(--transition), transform var(--transition);
+}
+
+.dienst-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--accent-orange);
 }
 
 .dienst-card:hover {
@@ -58,11 +70,11 @@
 
 .dienst-meta {
   margin: 0;
-  padding-top: var(--space-4);
+  padding-top: var(--space-3);
   border-top: 1px solid var(--rule);
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-2);
 }
 
 .dienst-meta > div {
@@ -83,6 +95,32 @@
 .dienst-meta dd {
   margin: 0;
   color: var(--ink-muted);
+}
+
+.dienst-track-logos {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.dienst-track-logos img {
+  height: 20px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  filter: opacity(0.9);
+}
+
+[data-theme="dark"] .dienst-track-logos img,
+:root:not([data-theme="light"]) .dienst-track-logos img {
+  filter: grayscale(1) opacity(0.6) invert(0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .dienst-track-logos img {
+    filter: grayscale(1) opacity(0.6) invert(0.85);
+  }
 }
 
 .dienst-card .btn-ghost {
