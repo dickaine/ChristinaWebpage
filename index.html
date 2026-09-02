@@ -44,18 +44,22 @@
         <a class="wordmark" href="index.html">Christina van Hoekelen</a>
 
         <nav class="primary-nav" aria-label="Hoofdmenu">
-          <a href="#over-mij">Over mij</a>
-          <a href="#diensten">Diensten</a>
-          <a href="#cases">Cases</a>
-          <a href="#contact">Contact</a>
+          <a href="#over-mij" data-i18n="nav.about">Over mij</a>
+          <a href="#diensten" data-i18n="nav.services">Diensten</a>
+          <a href="#cases" data-i18n="nav.cases">Cases</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="header-actions">
+          <div class="lang-toggle" role="group" aria-label="Taal / Language">
+            <button type="button" data-lang="nl" aria-label="Nederlands" aria-pressed="true">🇳🇱</button>
+            <button type="button" data-lang="en" aria-label="English" aria-pressed="false">🇬🇧</button>
+          </div>
           <button type="button" class="theme-toggle" aria-label="Wissel thema" aria-pressed="false">
             <span class="theme-toggle-icon" aria-hidden="true"></span>
           </button>
           <!-- TBD: vervang href door Cal.com / Calendly URL -->
-          <a class="btn btn-primary header-cta" href="#contact">Plan kennismaking</a>
+          <a class="btn btn-primary header-cta" href="#contact" data-i18n="header.cta">Plan kennismaking</a>
         </div>
       </div>
     </header>
@@ -69,13 +73,13 @@
       <section id="hero" class="hero">
         <div class="container-wide hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">HR × HRtech consultant</p>
-            <h1>Ik bouw de brug tussen HR en IT, zodat je HR-systeem werkt voor de mensen die het gebruiken.</h1>
-            <p class="lead">15 jaar HR + HRtech-ervaring. Implementaties, vendor-selecties en optimalisaties voor Nederlandse scale-ups en corporates.</p>
+            <p class="eyebrow" data-i18n="hero.eyebrow">HR × HRtech consultant</p>
+            <h1 data-i18n="hero.title">Ik bouw de brug tussen HR en IT, zodat je HR-systeem werkt voor de mensen die het gebruiken.</h1>
+            <p class="lead" data-i18n="hero.lead">15 jaar HR + HRtech-ervaring. Implementaties, vendor-selecties en optimalisaties voor Nederlandse scale-ups en corporates.</p>
             <div class="hero-ctas">
               <!-- TBD: Cal.com / Calendly URL -->
-              <a class="btn btn-primary" href="#contact">Plan een kennismaking</a>
-              <a class="btn btn-secondary" href="#diensten">Bekijk hoe ik werk</a>
+              <a class="btn btn-primary" href="#contact" data-i18n="hero.cta1">Plan een kennismaking</a>
+              <a class="btn btn-secondary" href="#diensten" data-i18n="hero.cta2">Bekijk hoe ik werk</a>
             </div>
           </div>
           <div class="hero-image">
@@ -85,7 +89,7 @@
 
         <!-- Gewerkt voor -->
         <div class="container-wide logo-strip">
-          <p class="logo-strip-label">Gewerkt voor</p>
+          <p class="logo-strip-label" data-i18n="hero.logolabel">Gewerkt voor</p>
           <div class="logo-strip-viewport">
             <ul class="logo-strip-list">
               <li><img src="Images/KPN_logo_2023.svg" alt="KPN"></li>
@@ -120,10 +124,10 @@
       <section id="over-mij" class="over-mij section section-alt">
         <div class="container over-mij-grid">
           <div class="over-mij-text">
-            <p class="eyebrow">Over mij</p>
-            <h2>De komende 10 jaar gaat het systeem de mens weer dienen.</h2>
-            <p class="lead">De afgelopen 10 jaar stonden in het teken van het standaardiseren van HR-systemen. De volgende fase vraagt iemand die beide talen spreekt: HR én IT.</p>
-            <p>Ik ben Christina, <span id="age">36</span> jaar, en heb 15 jaar in het HR-vak gewerkt. De laatste vijf jaar als freelancer. Mijn specialisatie: organisaties helpen om HR-systemen niet alleen technisch goed te implementeren, maar ze ook echt te laten werken voor de mensen die ermee moeten werken. Momenteel werk ik bij Technische Unie als Business Process Architect.</p>
+            <p class="eyebrow" data-i18n="about.eyebrow">Over mij</p>
+            <h2 data-i18n="about.title">De komende 10 jaar gaat het systeem de mens weer dienen.</h2>
+            <p class="lead" data-i18n="about.lead">De afgelopen 10 jaar stonden in het teken van het standaardiseren van HR-systemen. De volgende fase vraagt iemand die beide talen spreekt: HR én IT.</p>
+            <p data-i18n="about.body">Ik ben Christina, <span id="age">36</span> jaar, en heb 15 jaar in het HR-vak gewerkt. De laatste vijf jaar als freelancer. Mijn specialisatie: organisaties helpen om HR-systemen niet alleen technisch goed te implementeren, maar ze ook echt te laten werken voor de mensen die ermee moeten werken. Momenteel werk ik bij Technische Unie als Business Process Architect.</p>
           </div>
           <div class="over-mij-photo">
             <img src="Images/christina-overmij.jpg" alt="Christina van Hoekelen">
@@ -136,70 +140,70 @@
       <section id="diensten" class="diensten section">
         <div class="container-wide">
           <header class="section-header">
-            <p class="eyebrow">Diensten</p>
-            <h2>Drie manieren om samen te werken.</h2>
-            <p class="lead">Geen open-eind consultancy. Iedere opdracht heeft een afgebakende scope, doorlooptijd en oplevering. Met hands-on ervaring in o.a. Workday, Oracle Cloud HCM, AFAS, ServiceNow en Shiftbase.</p>
+            <p class="eyebrow" data-i18n="services.eyebrow">Diensten</p>
+            <h2 data-i18n="services.title">Drie manieren om samen te werken.</h2>
+            <p class="lead" data-i18n="services.lead">Geen open-eind consultancy. Iedere opdracht heeft een afgebakende scope, doorlooptijd en oplevering. Met hands-on ervaring in o.a. Workday, Oracle Cloud HCM, AFAS, ServiceNow en Shiftbase.</p>
           </header>
 
           <div class="diensten-grid">
 
             <article class="dienst-card">
-              <h3 class="dienst-name">HRIS Vendor Selection Sprint</h3>
-              <p class="dienst-outcome">Een onderbouwde keuze voor het HR-systeem dat bij jullie organisatie past, zonder vendor-druk.</p>
+              <h3 class="dienst-name" data-i18n="services.1.name">HRIS Vendor Selection Sprint</h3>
+              <p class="dienst-outcome" data-i18n="services.1.outcome">Een onderbouwde keuze voor het HR-systeem dat bij jullie organisatie past, zonder vendor-druk.</p>
               <ul class="dienst-scope">
-                <li>Requirements-sessies met HR, IT en eindgebruikers</li>
-                <li>Long- en shortlist van leveranciers</li>
-                <li>Gestructureerde demo's en scoring</li>
-                <li>Onderbouwd selectie-advies</li>
+                <li data-i18n="services.1.scope1">Requirements-sessies met HR, IT en eindgebruikers</li>
+                <li data-i18n="services.1.scope2">Long- en shortlist van leveranciers</li>
+                <li data-i18n="services.1.scope3">Gestructureerde demo's en scoring</li>
+                <li data-i18n="services.1.scope4">Onderbouwd selectie-advies</li>
               </ul>
               <dl class="dienst-meta">
                 <div>
-                  <dt>Duur</dt>
-                  <dd>4 weken</dd>
+                  <dt data-i18n="services.meta.duration">Duur</dt>
+                  <dd data-i18n="services.1.duration">4 weken</dd>
                 </div>
                 <div>
-                  <dt>Wanneer dit past</dt>
-                  <dd>Je staat voor de eerste (of opnieuw) keuze van een HR-systeem.</dd>
+                  <dt data-i18n="services.meta.fit">Wanneer dit past</dt>
+                  <dd data-i18n="services.1.fit">Je staat voor de eerste (of opnieuw) keuze van een HR-systeem.</dd>
                 </div>
                 <div>
-                  <dt>Track record</dt>
+                  <dt data-i18n="services.meta.track">Track record</dt>
                   <dd>
-                    HR IT-scan met procesmodellering (BPMN) en vendor-analyse voor CERN.
+                    <span data-i18n="services.1.track">HR IT-scan met procesmodellering (BPMN) en vendor-analyse voor CERN.</span>
                     <span class="dienst-track-logos">
                       <img src="Images/CERN_logo.svg" alt="CERN">
                     </span>
                   </dd>
                 </div>
                 <div>
-                  <dt>Indicatieve investering</dt>
-                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd">op aanvraag</span></dd>
+                  <dt data-i18n="services.meta.invest">Indicatieve investering</dt>
+                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd" data-i18n="services.tbdprice">op aanvraag</span></dd>
                 </div>
               </dl>
-              <a class="btn-ghost" href="#contact">Plan kennismaking</a>
+              <a class="btn-ghost" href="#contact" data-i18n="services.cta">Plan kennismaking</a>
             </article>
 
             <article class="dienst-card">
-              <h3 class="dienst-name">Implementatie &amp; Go-Live Begeleiding</h3>
-              <p class="dienst-outcome">Een nieuwe HR-suite of -module die op tijd live gaat, en die HR én IT samen blijven dragen.</p>
+              <h3 class="dienst-name" data-i18n="services.2.name">Implementatie &amp; Go-Live Begeleiding</h3>
+              <p class="dienst-outcome" data-i18n="services.2.outcome">Een nieuwe HR-suite of -module die op tijd live gaat, en die HR én IT samen blijven dragen.</p>
               <ul class="dienst-scope">
-                <li>Product owner / proces manager rol</li>
-                <li>Brug tussen HR-business en technische consultants</li>
-                <li>Sturen op scope, planning en go-live readiness</li>
-                <li>Training en overdracht naar de staande organisatie</li>
+                <li data-i18n="services.2.scope1">Product owner / proces manager rol</li>
+                <li data-i18n="services.2.scope2">Brug tussen HR-business en technische consultants</li>
+                <li data-i18n="services.2.scope3">Sturen op scope, planning en go-live readiness</li>
+                <li data-i18n="services.2.scope4">Training en overdracht naar de staande organisatie</li>
               </ul>
               <dl class="dienst-meta">
                 <div>
-                  <dt>Duur</dt>
-                  <dd>Per project</dd>
+                  <dt data-i18n="services.meta.duration">Duur</dt>
+                  <dd data-i18n="services.2.duration">Per project</dd>
                 </div>
                 <div>
-                  <dt>Wanneer dit past</dt>
-                  <dd>Je bent gestart met een implementatie en mist een eigenaar die beide werelden begrijpt.</dd>
+                  <dt data-i18n="services.meta.fit">Wanneer dit past</dt>
+                  <dd data-i18n="services.2.fit">Je bent gestart met een implementatie en mist een eigenaar die beide werelden begrijpt.</dd>
                 </div>
                 <div>
-                  <dt>Track record</dt>
+                  <dt data-i18n="services.meta.track">Track record</dt>
                   <dd>
-                    Oracle Cloud HCM bij KPN, Workday Recruitment bij Rituals, AFAS bij AFPRO Filters.
+                    <span data-i18n="services.2.track">Oracle Cloud HCM bij KPN, Workday Recruitment bij Rituals, AFAS bij AFPRO Filters.</span>
                     <span class="dienst-track-logos">
                       <img src="Images/KPN_logo_2023.svg" alt="KPN">
                       <img src="Images/Rituals_logo.png" alt="Rituals">
@@ -208,35 +212,35 @@
                   </dd>
                 </div>
                 <div>
-                  <dt>Indicatieve investering</dt>
-                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd">op aanvraag</span></dd>
+                  <dt data-i18n="services.meta.invest">Indicatieve investering</dt>
+                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd" data-i18n="services.tbdprice">op aanvraag</span></dd>
                 </div>
               </dl>
-              <a class="btn-ghost" href="#contact">Plan kennismaking</a>
+              <a class="btn-ghost" href="#contact" data-i18n="services.cta">Plan kennismaking</a>
             </article>
 
             <article class="dienst-card">
-              <h3 class="dienst-name">Post-Implementation Optimalisatie</h3>
-              <p class="dienst-outcome">Een bestaand HR-systeem dat draait, maar onderbenut is: terugbrengen naar wat het oorspronkelijk moest doen.</p>
+              <h3 class="dienst-name" data-i18n="services.3.name">Post-Implementation Optimalisatie</h3>
+              <p class="dienst-outcome" data-i18n="services.3.outcome">Een bestaand HR-systeem dat draait, maar onderbenut is: terugbrengen naar wat het oorspronkelijk moest doen.</p>
               <ul class="dienst-scope">
-                <li>Procesaudit met HR, IT en key-users</li>
-                <li>Identificatie van quick wins en structurele issues</li>
-                <li>Roadmap voor configuratie- en procesverbetering</li>
-                <li>Begeleiding bij uitvoering of overdracht</li>
+                <li data-i18n="services.3.scope1">Procesaudit met HR, IT en key-users</li>
+                <li data-i18n="services.3.scope2">Identificatie van quick wins en structurele issues</li>
+                <li data-i18n="services.3.scope3">Roadmap voor configuratie- en procesverbetering</li>
+                <li data-i18n="services.3.scope4">Begeleiding bij uitvoering of overdracht</li>
               </ul>
               <dl class="dienst-meta">
                 <div>
-                  <dt>Duur</dt>
-                  <dd>6 weken</dd>
+                  <dt data-i18n="services.meta.duration">Duur</dt>
+                  <dd data-i18n="services.3.duration">6 weken</dd>
                 </div>
                 <div>
-                  <dt>Wanneer dit past</dt>
-                  <dd>Je hebt een systeem dat &quot;draait&quot; maar de adoptie of efficiëntie blijft achter.</dd>
+                  <dt data-i18n="services.meta.fit">Wanneer dit past</dt>
+                  <dd data-i18n="services.3.fit">Je hebt een systeem dat &quot;draait&quot; maar de adoptie of efficiëntie blijft achter.</dd>
                 </div>
                 <div>
-                  <dt>Track record</dt>
+                  <dt data-i18n="services.meta.track">Track record</dt>
                   <dd>
-                    Get-well plan voor de onboarding journey bij KPN; HR Tech &amp; Analytics bij Jacobs Douwe Egberts.
+                    <span data-i18n="services.3.track">Get-well plan voor de onboarding journey bij KPN; HR Tech &amp; Analytics bij Jacobs Douwe Egberts.</span>
                     <span class="dienst-track-logos">
                       <img src="Images/KPN_logo_2023.svg" alt="KPN">
                       <img src="Images/JDE_logo.svg" alt="Jacobs Douwe Egberts">
@@ -244,11 +248,11 @@
                   </dd>
                 </div>
                 <div>
-                  <dt>Indicatieve investering</dt>
-                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd">op aanvraag</span></dd>
+                  <dt data-i18n="services.meta.invest">Indicatieve investering</dt>
+                  <dd><!-- TBD: Christina to confirm price range --><span class="tbd" data-i18n="services.tbdprice">op aanvraag</span></dd>
                 </div>
               </dl>
-              <a class="btn-ghost" href="#contact">Plan kennismaking</a>
+              <a class="btn-ghost" href="#contact" data-i18n="services.cta">Plan kennismaking</a>
             </article>
 
           </div>
@@ -260,8 +264,8 @@
       <section id="cases" class="cases section section-alt">
         <div class="container-wide">
           <header class="section-header">
-            <p class="eyebrow">Cases</p>
-            <h2>Wat ik heb gebouwd.</h2>
+            <p class="eyebrow" data-i18n="cases.eyebrow">Cases</p>
+            <h2 data-i18n="cases.title">Wat ik heb gebouwd.</h2>
           </header>
 
           <div class="cases-grid">
@@ -270,12 +274,12 @@
               <div class="case-logo">
                 <img src="Images/KPN_logo_2023.svg" alt="KPN">
               </div>
-              <h3 class="case-title">Oracle Cloud HCM · Time &amp; Labor</h3>
-              <p class="case-context">KPN consolideerde meerdere legacy HR-platformen naar één Oracle Cloud HCM-suite. Als verantwoordelijke voor de Time &amp; Labor-module zorgde ik voor scope, go-live readiness en voorbereiding van de business.</p>
+              <h3 class="case-title" data-i18n="cases.1.title">Oracle Cloud HCM · Time &amp; Labor</h3>
+              <p class="case-context" data-i18n="cases.1.context">KPN consolideerde meerdere legacy HR-platformen naar één Oracle Cloud HCM-suite. Als verantwoordelijke voor de Time &amp; Labor-module zorgde ik voor scope, go-live readiness en voorbereiding van de business.</p>
               <dl class="case-outcome">
-                <dt>Resultaat</dt>
+                <dt data-i18n="cases.result">Resultaat</dt>
                 <!-- TBD: Christina to verify numbers (aantal platformen, aantal medewerkers, etc.) -->
-                <dd>Go-live januari 2022. Migratie vanuit meerdere legacy-platformen naar één standaard.</dd>
+                <dd data-i18n="cases.1.result">Go-live januari 2022. Migratie vanuit meerdere legacy-platformen naar één standaard.</dd>
               </dl>
             </article>
 
@@ -283,12 +287,12 @@
               <div class="case-logo">
                 <img src="Images/VU_logo_official.svg" alt="Vrije Universiteit Amsterdam">
               </div>
-              <h3 class="case-title">ServiceNow · Onboarding &amp; Offboarding</h3>
-              <p class="case-context">Als HR Product Owner verantwoordelijk voor het ontwerp en de bouw van de onboarding- en offboarding-modules in ServiceNow, inclusief de procedures eromheen.</p>
+              <h3 class="case-title" data-i18n="cases.2.title">ServiceNow · Onboarding &amp; Offboarding</h3>
+              <p class="case-context" data-i18n="cases.2.context">Als HR Product Owner verantwoordelijk voor het ontwerp en de bouw van de onboarding- en offboarding-modules in ServiceNow, inclusief de procedures eromheen.</p>
               <dl class="case-outcome">
-                <dt>Resultaat</dt>
+                <dt data-i18n="cases.result">Resultaat</dt>
                 <!-- TBD: Christina to verify numbers (aantal nieuwe medewerkers per jaar, reductie doorlooptijd, etc.) -->
-                <dd>Gestandaardiseerd in- en uitstroomproces voor de hele organisatie.</dd>
+                <dd data-i18n="cases.2.result">Gestandaardiseerd in- en uitstroomproces voor de hele organisatie.</dd>
               </dl>
             </article>
 
@@ -296,11 +300,11 @@
               <div class="case-logo">
                 <img src="Images/AFPRO_logo.png" alt="AFPRO Filters">
               </div>
-              <h3 class="case-title">AFAS &amp; Shiftbase · Internationale rollout</h3>
-              <p class="case-context">Als interim projectmanager verantwoordelijk voor de internationale AFAS-implementatie bij AFPRO Filters: HR-processen gestroomlijnd en gestandaardiseerd over alle AFPRO-entiteiten en Filtrair, inclusief de adoptie van HR self-service door managers en medewerkers.</p>
+              <h3 class="case-title" data-i18n="cases.3.title">AFAS &amp; Shiftbase · Internationale rollout</h3>
+              <p class="case-context" data-i18n="cases.3.context">Als interim projectmanager verantwoordelijk voor de internationale AFAS-implementatie bij AFPRO Filters: HR-processen gestroomlijnd en gestandaardiseerd over alle AFPRO-entiteiten en Filtrair, inclusief de adoptie van HR self-service door managers en medewerkers.</p>
               <dl class="case-outcome">
-                <dt>Resultaat</dt>
-                <dd>Eén gestandaardiseerd HR-landschap over alle internationale entiteiten. AFAS en Shiftbase live.</dd>
+                <dt data-i18n="cases.result">Resultaat</dt>
+                <dd data-i18n="cases.3.result">Eén gestandaardiseerd HR-landschap over alle internationale entiteiten. AFAS en Shiftbase live.</dd>
               </dl>
             </article>
 
@@ -308,11 +312,11 @@
               <div class="case-logo">
                 <img src="Images/CERN_logo.svg" alt="CERN">
               </div>
-              <h3 class="case-title">HR IT-scan &amp; Vendor-analyse</h3>
-              <p class="case-context">Voor CERN in Genève voerde ik als senior consultant een HR IT-scan uit: procesmodellering (BPMN) van het bestaande HR-landschap plus een onafhankelijke vendor-analyse als basis voor de volgende stap.</p>
+              <h3 class="case-title" data-i18n="cases.4.title">HR IT-scan &amp; Vendor-analyse</h3>
+              <p class="case-context" data-i18n="cases.4.context">Voor CERN in Genève voerde ik als senior consultant een HR IT-scan uit: procesmodellering (BPMN) van het bestaande HR-landschap plus een onafhankelijke vendor-analyse als basis voor de volgende stap.</p>
               <dl class="case-outcome">
-                <dt>Resultaat</dt>
-                <dd>Onderbouwd beeld van het HR IT-landschap en een productonafhankelijk vendor-advies.</dd>
+                <dt data-i18n="cases.result">Resultaat</dt>
+                <dd data-i18n="cases.4.result">Onderbouwd beeld van het HR IT-landschap en een productonafhankelijk vendor-advies.</dd>
               </dl>
             </article>
 
@@ -320,11 +324,11 @@
               <div class="case-logo">
                 <img src="Images/Rituals_logo.png" alt="Rituals">
               </div>
-              <h3 class="case-title">Global Recruitment · Workday &amp; Paradox</h3>
-              <p class="case-context">Als Global Test &amp; Hypercare Lead a.i. begeleidde ik de implementatie van het wereldwijde recruitmentproces bij Rituals, inclusief hiring- en payroll-integraties over Kaliber, Paradox, Workday Recruitment, Workday HCM en GlobalView.</p>
+              <h3 class="case-title" data-i18n="cases.5.title">Global Recruitment · Workday &amp; Paradox</h3>
+              <p class="case-context" data-i18n="cases.5.context">Als Global Test &amp; Hypercare Lead a.i. begeleidde ik de implementatie van het wereldwijde recruitmentproces bij Rituals, inclusief hiring- en payroll-integraties over Kaliber, Paradox, Workday Recruitment, Workday HCM en GlobalView.</p>
               <dl class="case-outcome">
-                <dt>Resultaat</dt>
-                <dd>Wereldwijd recruitmentproces live, inclusief keten-integraties van sollicitatie tot payroll.</dd>
+                <dt data-i18n="cases.result">Resultaat</dt>
+                <dd data-i18n="cases.5.result">Wereldwijd recruitmentproces live, inclusief keten-integraties van sollicitatie tot payroll.</dd>
               </dl>
             </article>
 
@@ -332,11 +336,11 @@
               <div class="case-logo">
                 <img src="Images/TechnischeUnie_logo.png" alt="Technische Unie">
               </div>
-              <h3 class="case-title">HR IT-architectuur</h3>
-              <p class="case-context">Als Business Process Architect bij Technische Unie verantwoordelijk voor de volledige HR IT-architectuur: de brug tussen HR en IT, met als missie versimpelen en verbinden.</p>
+              <h3 class="case-title" data-i18n="cases.6.title">HR IT-architectuur</h3>
+              <p class="case-context" data-i18n="cases.6.context">Als Business Process Architect bij Technische Unie verantwoordelijk voor de volledige HR IT-architectuur: de brug tussen HR en IT, met als missie versimpelen en verbinden.</p>
               <dl class="case-outcome">
-                <dt>Resultaat</dt>
-                <dd>Lopend sinds februari 2026.</dd>
+                <dt data-i18n="cases.result">Resultaat</dt>
+                <dd data-i18n="cases.6.result">Lopend sinds februari 2026.</dd>
               </dl>
             </article>
 
@@ -349,15 +353,15 @@
       <section id="testimonials" class="testimonials section">
         <div class="container">
           <header class="section-header section-header-center">
-            <p class="eyebrow">Testimonials</p>
-            <h2>Wat opdrachtgevers zeggen.</h2>
+            <p class="eyebrow" data-i18n="testi.eyebrow">Testimonials</p>
+            <h2 data-i18n="testi.title">Wat opdrachtgevers zeggen.</h2>
           </header>
 
           <div class="carousel-container">
             <div class="carousel-text">
               <div class="active">
                 <blockquote>
-                  <p>"Christina was verantwoordelijk voor het opzetten van de Time &amp; Labor module in onze HR Transitie naar Oracle Cloud met een livegang van Jan 2022. Een uitdagende rol omdat KPN hiermee in staat werd gesteld om vanuit verschillende platformen en applicaties naar een standaard te migreren. Christina heeft veel waardering ontvangen voor de manier waarop zij ook de betreffende business onderdelen heeft voorbereid op deze transitie en deze heeft uitgevoerd. Zij is een gefocuste HR IT professional, met veel kennis en daarnaast aandacht voor de mens achter de IT implementatie. Tevens heeft zij interim verbeteringen en get-well plan uitgevoerd in de onboardings journey."</p>
+                  <p data-i18n="testi.q1">"Christina was verantwoordelijk voor het opzetten van de Time &amp; Labor module in onze HR Transitie naar Oracle Cloud met een livegang van Jan 2022. Een uitdagende rol omdat KPN hiermee in staat werd gesteld om vanuit verschillende platformen en applicaties naar een standaard te migreren. Christina heeft veel waardering ontvangen voor de manier waarop zij ook de betreffende business onderdelen heeft voorbereid op deze transitie en deze heeft uitgevoerd. Zij is een gefocuste HR IT professional, met veel kennis en daarnaast aandacht voor de mens achter de IT implementatie. Tevens heeft zij interim verbeteringen en get-well plan uitgevoerd in de onboardings journey."</p>
                 </blockquote>
                 <footer class="testimonial-attribution">
                   <span class="testimonial-name">Marcel Winkel</span>
@@ -366,7 +370,7 @@
               </div>
               <div>
                 <blockquote>
-                  <p>"Christina, dank voor je projectmatige aanpak voor de internationale Afas implementatie. Je hebt Afpro echt naar het next level gebracht. Onder de indruk van je kennis en kunde, veel succes in je volgende opdracht."</p>
+                  <p data-i18n="testi.q2">"Christina, dank voor je projectmatige aanpak voor de internationale Afas implementatie. Je hebt Afpro echt naar het next level gebracht. Onder de indruk van je kennis en kunde, veel succes in je volgende opdracht."</p>
                 </blockquote>
                 <footer class="testimonial-attribution">
                   <span class="testimonial-name">Yvette Minderhoud</span>
@@ -422,14 +426,14 @@
         <div class="container hr-tech-flexbox">
           <div class="hr-tech-review-text">
             <p class="eyebrow">Featured in</p>
-            <p class="hr-tech-pull">"De komende jaren verwacht ik dat de focus verschuift van het systeem naar de mens, dat het systeem de mens weer gaat dienen in plaats van andersom."</p>
+            <p class="hr-tech-pull" data-i18n="feat.quote">"De komende jaren verwacht ik dat de focus verschuift van het systeem naar de mens, dat het systeem de mens weer gaat dienen in plaats van andersom."</p>
             <p class="hr-tech-meta">Expert panel · HRtechArena</p>
           </div>
           <div class="hrtech-emblems">
             <a href="https://hrtecharena.nl/arena/christina-van-hoekelen/" target="_blank" rel="noopener">
               <img src="Images/Hrtechlogo.webp" alt="HRtechArena" class="hrtech-emblem">
             </a>
-            <a href="https://hrtecharena.nl/arena/christina-van-hoekelen/" target="_blank" rel="noopener" class="hrtech-link">
+            <a href="https://hrtecharena.nl/arena/christina-van-hoekelen/" target="_blank" rel="noopener" class="hrtech-link" data-i18n="feat.panel">
               Lees het panel
             </a>
           </div>
@@ -439,8 +443,8 @@
             <img src="Images/Hrtechlogo.webp" alt="HRtechArena">
           </a>
           <div class="hr-tech-author-text">
-            <p>Ik schrijf ook voor HRtechArena. Over waarom de meeste HR-tech-stacks nog niet klaar zijn voor AI, de stap van generatieve naar agentic AI, en de belangrijkste trends van Unleash.</p>
-            <a href="https://hrtecharena.nl/author/christinavanhoekelen/" target="_blank" rel="noopener" class="hrtech-link">
+            <p data-i18n="feat.author">Ik schrijf ook voor HRtechArena. Over waarom de meeste HR-tech-stacks nog niet klaar zijn voor AI, de stap van generatieve naar agentic AI, en de belangrijkste trends van Unleash.</p>
+            <a href="https://hrtecharena.nl/author/christinavanhoekelen/" target="_blank" rel="noopener" class="hrtech-link" data-i18n="feat.articles">
               Lees mijn artikelen
             </a>
           </div>
@@ -452,14 +456,14 @@
       <section id="newsletter" class="newsletter">
         <div class="container newsletter-inner">
           <div class="newsletter-copy">
-            <h2 class="newsletter-title">Maandelijkse take op HR-tech in Nederland.</h2>
-            <p class="newsletter-sub">Wat werkt, wat niet, en waarom. Eén keer per maand. Geen spam.</p>
+            <h2 class="newsletter-title" data-i18n="news.title">Maandelijkse take op HR-tech in Nederland.</h2>
+            <p class="newsletter-sub" data-i18n="news.sub">Wat werkt, wat niet, en waarom. Eén keer per maand. Geen spam.</p>
           </div>
           <!-- TBD: koppel form action aan ESP (Mailchimp / Buttondown / Beehiiv) -->
           <form class="newsletter-form" action="" method="post" novalidate>
-            <label for="newsletter-email" class="visually-hidden">E-mailadres</label>
-            <input type="email" id="newsletter-email" name="email" placeholder="jouw@email.nl" required>
-            <button type="submit" class="btn btn-primary">Aanmelden</button>
+            <label for="newsletter-email" class="visually-hidden" data-i18n="news.label">E-mailadres</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="jouw@email.nl" data-i18n-attr="placeholder:news.placeholder" required>
+            <button type="submit" class="btn btn-primary" data-i18n="news.button">Aanmelden</button>
           </form>
         </div>
       </section>
@@ -469,9 +473,9 @@
       <section id="contact" class="contact section section-alt">
         <div class="container">
           <header class="section-header section-header-center">
-            <p class="eyebrow">Contact</p>
-            <h2>Even sparren?</h2>
-            <p class="lead">Soms moeten de koppen even bij elkaar om te zien of er een match is.</p>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Even sparren?</h2>
+            <p class="lead" data-i18n="contact.lead">Soms moeten de koppen even bij elkaar om te zien of er een match is.</p>
           </header>
 
           <div class="contact-primary">
@@ -480,8 +484,8 @@
             </div>
             <!-- TBD: vervang door werkelijke Cal.com embed iframe of inline widget -->
             <div class="cal-embed-placeholder">
-              <p class="cal-embed-title">Plan direct een kennismaking</p>
-              <p class="cal-embed-sub">30 minuten · telefoon of video.</p>
+              <p class="cal-embed-title" data-i18n="contact.caltitle">Plan direct een kennismaking</p>
+              <p class="cal-embed-sub" data-i18n="contact.calsub">30 minuten · telefoon of video.</p>
               <a class="btn btn-primary" href="#" aria-disabled="true">
                 Cal.com embed (TBD)
               </a>
@@ -522,13 +526,13 @@
       <div class="container-wide footer-grid">
         <div class="footer-brand">
           <p class="footer-wordmark">Christina van Hoekelen</p>
-          <p class="footer-tagline">De brug tussen HR en IT.</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">De brug tussen HR en IT.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer">
-          <a href="#over-mij">Over mij</a>
-          <a href="#diensten">Diensten</a>
-          <a href="#cases">Cases</a>
-          <a href="#contact">Contact</a>
+          <a href="#over-mij" data-i18n="nav.about">Over mij</a>
+          <a href="#diensten" data-i18n="nav.services">Diensten</a>
+          <a href="#cases" data-i18n="nav.cases">Cases</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer-meta">
           <ul class="footer-social">
@@ -543,14 +547,7 @@
     </footer>
     <!-- end of footer -->
 
-    <script>
-      document.getElementById('footer-year').textContent = new Date().getFullYear();
-      var birth = new Date(1990, 5, 13);
-      var now = new Date();
-      var age = now.getFullYear() - birth.getFullYear();
-      if (now.getMonth() < birth.getMonth() || (now.getMonth() === birth.getMonth() && now.getDate() < birth.getDate())) age--;
-      document.getElementById('age').textContent = age;
-    </script>
+    <script src="Javascript/i18n.js"></script>
     <script src="Javascript/theme-toggle.js"></script>
 
   </body>

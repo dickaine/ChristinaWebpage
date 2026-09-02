@@ -99,3 +99,36 @@
     padding: var(--space-2) var(--space-3);
   }
 }
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.lang-toggle button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity var(--transition), border-color var(--transition);
+}
+
+.lang-toggle button:hover {
+  opacity: 1;
+}
+
+.lang-toggle button.active {
+  opacity: 1;
+  border-color: var(--rule);
+  background-color: var(--accent-soft);
+}
